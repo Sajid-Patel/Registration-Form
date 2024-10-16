@@ -1,0 +1,143 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    /* Simple and clean font */
+    background: url('https://eduauraapublic.s3.ap-south-1.amazonaws.com/webassets/images/blogs/how-to-become-a-programmer-in-india.jpg') no-repeat center center fixed;
+    /* Replace with an actual Naruto background image */
+    background-size: cover;
+    /* Cover the entire background */
+    color: #333;
+    /* Dark text for readability */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* Full height */
+}
+
+form {
+    background: rgba(255, 255, 255, 0.9);
+    /* Semi-transparent white background */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    /* Light shadow for depth */
+    width: 90%;
+    /* Responsive width */
+    max-width: 400px;
+    /* Max width for larger screens */
+    transform: translateY(-20px);
+    animation: slideIn 0.5s forwards;
+    /* Animation for form */
+}
+
+/* Slide-in Animation */
+@keyframes slideIn {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+    /* Larger heading */
+    color: #e67e22;
+    /* Bright orange color for the heading */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    /* Subtle text shadow */
+}
+
+input[type="text"],
+input[type="password"] {
+    width: calc(100% - 22px);
+    /* Full width minus padding */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #3498db;
+    /* Blue border */
+    border-radius: 5px;
+    background: #ecf0f1;
+    /* Light gray background for inputs */
+    color: #333;
+    /* Dark text for inputs */
+    font-size: 16px;
+    /* Font size */
+    transition: border-color 0.3s;
+    /* Smooth transition for border color */
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #2980b9;
+    /* Highlight border color */
+    outline: none;
+    /* Remove outline */
+}
+
+button {
+    width: 100%;
+    /* Full width buttons */
+    padding: 10px;
+    background: #3498db;
+    /* Blue button background */
+    border: none;
+    /* Remove default border */
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #ffffff;
+    /* White text for buttons */
+    transition: background 0.3s, transform 0.2s;
+    /* Smooth transition for hover */
+}
+
+button:hover {
+    background: #2980b9;
+    /* Darker blue on hover */
+    transform: scale(1.05);
+    /* Slightly enlarge on hover */
+}
+
+label {
+    display: block;
+    /* Labels as block elements */
+    margin-top: 5px;
+    /* Space above labels */
+    color: #e74c3c;
+    /* Red color for messages */
+    font-size: 14px;
+    /* Font size for messages */
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.5em;
+        /* Slightly smaller heading on small screens */
+    }
+
+    button {
+        padding: 8px;
+        /* Smaller padding on buttons */
+    }
+
+    input[type="text"],
+    input[type="password"] {
+        font-size: 14px;
+        /* Smaller font size for inputs */
+    }
+}
